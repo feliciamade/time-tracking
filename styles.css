@@ -9,49 +9,218 @@ h1,h2,h3,h4,h5 {
     margin: 0;
 }
 
+
+
 .container {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    align-items: center; 
     justify-content: center;
-    height:100vh;
+    height: 100vh;
 }
-.jeremy-robson img {
-    width:50px;
-    height:50px;
-    margin-bottom: 10px;
- }
 
 
-.jeremy-robson {
-    background-color:hsl(246, 80%, 60%);
+
+.word {
+   box-sizing: border-box;
+    width:180px;
+    height:180px;
+    padding:20px;
+    background-color:  hsl(235, 46%, 20%);
+    border-radius: 20px;
     color:white;
-    width:100px;
-    height: 80px;
-    padding:60px 35px;
     position: relative;
-    z-index: 1;
-    border-radius:15px;
 }
 
-.d-w-m {
-    background-color:hsl(235, 46%, 20%);
-    color:white;
-    width:100px;
-    padding:35px;
-    height: 80px;
-    top:150px;
-    left:50%;
-    transform: translateX(-50%);
+.first-card {
+    box-sizing: border-box;
+    width: 180px;
+    height: 260px;
+    padding: 20px;
+    background-color: hsl(246, 80%, 60%);
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    position: relative; 
+}
+
+.first-card .background {
     position: absolute;
-    border-radius:15px;
+    top: 200px; 
+    left: 30;
+    width: 100%;
+    height: 180px;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
     z-index: -1;
 }
 
-.d-w-m p {
-    font-size: 12px;
+.first-card img {
+    width:40px;
+    height:40px;
+    margin-bottom: 10px;
+    border:1.5px white solid;
+    border-radius: 50%;
+ }
+
+
+.second-card{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    position: relative;
+}
+.second-card .background {
+    background-image: url(images/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    position: absolute;
+    box-sizing: border-box;
+    width:180px;
+    height:180px;
+    padding:20px;
+    background-color: hsl(15, 100%, 70%);
+    border-radius: 20px;
+    color:white;
+    z-index: -1;
+    top:-30px;
 }
 
-small {
-    font-weight: 200;
-    margin-bottom: 5px;
+.top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.third-card{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+
+.third-card .background {
+    background-image: url(images/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    position: absolute;
+    box-sizing: border-box;
+    width:180px;
+    height:180px;
+    padding:20px;
+    background-color: hsl(195, 74%, 62%);
+    border-radius: 20px;
+    color:white;
+    z-index: -1;
+    top:-30px;
+}
+
+
+.fourth-card{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+
+.fourth-card .background {
+    background-image: url(images/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    position: absolute;
+    box-sizing: border-box;
+    width:180px;
+    height:180px;
+    padding:20px;
+    background-color: hsl(348, 100%, 68%);
+    border-radius: 20px;
+    color:white;
+    z-index: -1;
+    top:-30px;
+}
+
+.fifth-card{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+
+.fifth-card .background {
+    background-image: url(images/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    position: absolute;
+    box-sizing: border-box;
+    width:180px;
+    height:180px;
+    padding:20px;
+    background-color:hsl(145, 58%, 55%);
+    border-radius: 20px;
+    color:white;
+    z-index: -1;
+    top:-30px;
+}
+
+.sixth-card{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.sixth-card .background {
+    background-image: url(images/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    position: absolute;
+    box-sizing: border-box;
+    width:180px;
+    height:180px;
+    padding:20px;
+    background-color:hsl(264, 64%, 52%);
+    border-radius: 20px;
+    color:white;
+    z-index: -1;
+    top:-30px;
+}
+
+.seventh-card{
+    display: flex;
+    flex-direction: column;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.seventh-card .background {
+    background-image: url(images/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position:top;
+    position: absolute;
+    box-sizing: border-box;
+    width:180px;
+    height:180px;
+    padding:20px;
+    background-color:hsl(43, 84%, 65%);
+    border-radius: 20px;
+    color:white;
+    z-index: -1;
+    top:-30px;
+}
+
+.grid {
+    display: grid;
+            grid-template-rows: repeat(2, 1fr); 
+            grid-template-columns: repeat(3, 1fr); 
+            gap: 10px;
+            padding: 20px;
+            grid-row-gap: 60px;
+            grid-column-gap: 40px;
+    
 }
