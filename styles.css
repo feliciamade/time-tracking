@@ -1,0 +1,57 @@
+body {
+    font-family: "Rubik", serif;
+    margin: 0;
+    padding:0;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 300;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+.jeremy-robson img {
+    width:50px;
+    height:50px;
+    margin-bottom: 10px;
+ }
+
+
+.jeremy-robson {
+    background-color:hsl(246, 80%, 60%);
+    color:white;
+    width:100px;
+    height: 80px;
+    padding:60px 35px;
+    position: relative;
+    z-index: 1;
+    border-radius:15px;
+}
+
+.d-w-m {
+    background-color:hsl(235, 46%, 20%);
+    color:white;
+    width:100px;
+    padding:35px;
+    height: 80px;
+    top:150px;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    border-radius:15px;
+    z-index: -1;
+}
+
+.d-w-m p {
+    font-size: 12px;
+}
+
+small {
+    font-weight: 200;
+    margin-bottom: 5px;
+}
